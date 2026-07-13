@@ -73,6 +73,10 @@ nav .links a:hover{
 
 /* home */
 
+.home{
+    margin-top: 150px;
+}
+
 .main {
     font-size: 50px;
     color: #46cb8f;
@@ -140,4 +144,100 @@ nav .links a:hover{
     color: white;
     background-color: #46cb8f;
     border: 1px solid black;
+}
+
+/* contact section stylings */
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card {
+    padding: 100px 30px;
+    background: #111;
+    border: 1px solid rgba(255,255,255,.08);
+    margin: 100px auto;
+    width: 100%;
+}
+
+.section-title {
+    margin-bottom: 2rem;
+}
+
+.contact-links {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-links a {
+    color: #ddd;
+    text-decoration: none;
+    padding: .75rem 1.2rem;
+    border: 1px solid rgba(255,255,255,.08);
+}
+
+.contact-links a:hover {
+    border-color: #46cb8f;
+    color: #46cb8f;
+}
+
+
+/* project section stylings */
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.project-card {
+    background: #111;
+    border: 1px solid #46cb8f;
+    padding: 2rem;
+    transition: transform .3s ease, border-color .3s ease;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: #46cb8f;
+}
+
+.project-card h3 {
+    margin-bottom: 1rem;
+}
+
+.project-card p {
+    color: #9b9b9b;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.project-card a {
+    color: #46cb8f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    padding: 2rem 8%;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+}
+
+footer p {
+    color: #777;
+    font-size: 0.9rem;
+    margin: 0;
 }
